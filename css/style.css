@@ -83,16 +83,12 @@
 
 .container {
     background-color: #E5E5E5;
-    display: flex;
-    justify-content: center;
 }
 
 .main {
-    
-}
-
-.payment {
-    margin: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .group {
@@ -219,7 +215,6 @@
     text-align: center;
     width: 540px;
     height: 50px;
-    /*margin: 0 auto 1rem;*/
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1rem;
@@ -298,13 +293,21 @@
     margin-top: 1.5rem;
 }
 
-.group-payment {
+.payment {
     background-color: white;
     border-radius: 10px;
     text-align: center;
     width: 319px;
     height: 344px;
-    margin: 0 auto 1rem;
+    margin: 1.5rem 1rem 0.5rem;
+}
+
+.card-payment-text {
+    position: fixed;
+}
+
+.card-payment-text {
+    position: fixed;
 }
 
 .payment_text {
@@ -359,6 +362,12 @@
     font-size: 0.7rem;
 }
 
+.line-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dot-blue {
     background-color: #01B1EC;
     width: 10px;
@@ -372,4 +381,45 @@
     height: 20px;
     border: 1px solid #01B1EC;
     border-radius: 50%;
+}
+
+.line-blue-item {
+    width: 95.59px;
+    height: 0.5px;
+    border: 1px solid #01B1EC;
+}
+
+.dot-gray {
+    background-color: #E1E1E1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.text-total {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.6rem;
+    font-weight: lighter;
+    padding: 0.3rem 0 1rem;
+}
+
+.btn_participar {
+    width: 287px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    background-color: #01B1EC;
+    color: white;
+}
+
+.container_payment {
+    text-align: center;
+    margin-right: auto;
+}
+
+.text-extra {
+    color: #616161;
+    font-size: 0.7rem;
+    font-weight: lighter;
 }
