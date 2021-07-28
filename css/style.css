@@ -107,3 +107,42 @@
     font-size: 0.7rem;
     padding: 1.5rem 0;
 }
+
+.btn_customizado {
+    background-color: #F1F4F5;
+    color: #616161;
+    border: none;
+    padding: 0.3rem 1.5rem;
+    border-radius: 15px;
+    font-size: 0.6rem;
+}
+
+.details_group {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+}
+
+.linha-vertical {
+    height: 70px;
+    border-right: 1px solid #E1E1E1;
+}
+
+.text-details_group {
+    font-size: 0.7rem;
+    color: #616161;
+}
+
+.price-details_group {
+    display: flex;
+    align-items: baseline;
+    padding: 0.5rem;
+}
+
+.price-details_group > h6 {
+    padding: 0.2rem;
+}
+
+.title-details_group {
+    padding: 0.5rem;
+}
