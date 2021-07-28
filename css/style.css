@@ -51,18 +51,19 @@
     color: black;
 }
 
-.container__user {
+.container_user {
     width: 50px;
     margin: auto 0;
 }
   
-.container__user-img {
+.container_user-img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     margin: auto 0;
     border: solid 1px;
     border-color: #01B1EC;
+    object-fit: cover;
 }
 
 .btn_grupo {
@@ -82,15 +83,26 @@
 
 .container {
     background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
 }
 
-.group1 {
+.main {
+    
+}
+
+.payment {
+    margin: 1.5rem 1rem;
+}
+
+.group {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     width: 540px;
     height: 286px;
-    margin: 0 auto 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .group_title {
@@ -129,8 +141,9 @@
 }
 
 .text-details_group {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #616161;
+    font-weight: lighter;
 }
 
 .price-details_group {
@@ -145,4 +158,218 @@
 
 .title-details_group {
     padding: 0.5rem;
+}
+
+.group-admin {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 540px;
+    height: 286px;
+    margin-bottom: 1rem;
+}
+
+.admin-group_title {
+    padding: 1rem;
+}
+
+.linha-horizontal {
+    width: 540px;
+    border: 1px solid #F1F4F5;
+}
+
+.container_admin {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+  
+.container_admin-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto 0;
+    border: solid 1px;
+    border-color: #01B1EC;
+    object-fit: cover;
+    margin: 0.4rem;
+}
+
+.admin-name {
+    font-weight: bold;
+}
+
+.trophys {
+    padding-top: 1.5rem;
+}
+
+.trophys > i {
+    font-size: 1.8rem;
+}
+
+.text-trophys {
+    font-size: 0.8rem;
+    color: #616161;
+    padding: 0.5rem;
+    font-weight: lighter;
+}
+
+.group-button {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 540px;
+    height: 50px;
+    /*margin: 0 auto 1rem;*/
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.group-button > i {
+    padding: 1rem;
+    text-align: right;
+}
+
+.group-button_title {
+    padding: 1rem;
+    margin: 0 150px;
+}
+
+.group-quem {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 540px;
+    height: 145px;
+    margin-bottom: 1rem;
+}
+
+.container_quem {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container_quem-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: auto 0;
+    border: solid 1px;
+    object-fit: cover;
+    margin: 0 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.quem-name {
+    font-size: 0.7rem;
+}
+
+.group-duvidas {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 540px;
+    height: 220px;
+    margin-bottom: 1rem;
+}
+
+.asks-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+
+.asks_text {
+    color: #616161;
+    font-size: 0.8rem;
+}
+
+.group_carousel {
+    display: flex;
+}
+
+.carousel-item {
+    background-color: white;
+    width: 153px;
+    height: 190px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+}
+
+.group-payment {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 319px;
+    height: 344px;
+    margin: 0 auto 1rem;
+}
+
+.payment_text {
+    color: #616161;
+    font-size: 0.9rem;
+}
+
+.linha-horizontal_pay {
+    width: 319px;
+    border: 1px solid #E1E1E1;
+}
+
+.number {
+    display: flex;
+}
+
+.number > p {
+    padding-right: 0.5rem;
+}
+
+.icons-number {
+    color: #01B1EC;
+}
+
+.text-caucao {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.text-caucao > i {
+    padding-left: 0.5rem;
+    color: #E1E1E1;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+.total-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    align-items: center;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.values-text {
+    font-size: 0.7rem;
+}
+
+.dot-blue {
+    background-color: #01B1EC;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.first-dot {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #01B1EC;
+    border-radius: 50%;
 }
