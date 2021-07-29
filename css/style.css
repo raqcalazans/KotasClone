@@ -105,9 +105,18 @@
     padding-top: 1rem;
 }
 
-.group_title > i {
+.icon-group_left {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid #F1F4F5;
+    margin: 0 auto;
+}
+
+.icon-group_left > i {
     color: #00D95A;
     font-size: 3rem;
+    padding: 0.5rem;
 }
 
 .group_description {
@@ -128,7 +137,7 @@
 .details_group {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 
 .linha-vertical {
@@ -156,7 +165,7 @@
     padding: 0.5rem;
 }
 
-.group-admin {
+.group_admin {
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -209,7 +218,7 @@
     font-weight: lighter;
 }
 
-.group-button {
+.group_button {
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -220,17 +229,17 @@
     margin-bottom: 1rem;
 }
 
-.group-button > i {
+.group_button > i {
     padding: 1rem;
     text-align: right;
 }
 
-.group-button_title {
+.group_button-title {
     padding: 1rem;
     margin: 0 150px;
 }
 
-.group-quem {
+.group_quem {
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -260,7 +269,7 @@
     font-size: 0.7rem;
 }
 
-.group-duvidas {
+.group_duvidas {
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -282,15 +291,39 @@
 
 .group_carousel {
     display: flex;
+    margin-bottom: 5rem;
 }
 
-.carousel-item {
+.carousel_item {
     background-color: white;
     width: 153px;
     height: 190px;
     border-radius: 8px;
     margin-right: 1rem;
     margin-top: 1.5rem;
+}
+
+.carousel_item-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: contain;
+    padding-top: 1rem;
+}
+
+.carousel_item-text {
+    font-size: 0.6rem;
+    padding: 1.3rem 0;
+}
+
+.carousel_item-text > p {
+    padding: 0.3rem 0;
+}
+
+.vaga {
+    color: #C4C4C4;
+    font-size: 0.6rem;
 }
 
 .payment {
@@ -422,4 +455,98 @@
     color: #616161;
     font-size: 0.7rem;
     font-weight: lighter;
+}
+
+.group_payment_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        background-color: whitesmoke;
+    }
+    .navbar {
+        display: none;
+    }
+    .group-right {
+        display: none;
+    }
+    .main {
+        display: block;
+    }
+    .group {
+        width: 360px;
+    }
+    .group_title {
+        padding-top: 0.6rem;
+    }
+    .group_description {
+        padding: 1.5rem 1.5rem;
+    }
+    .title-details_group,
+    .price-details_group {
+        padding: 0.3rem;
+    }
+    .group_admin {
+        width: 360px;  
+    }
+    .linha-horizontal {
+        width: 360px;
+    }
+    .group_button {
+        width: 360px;
+    }
+    .group_button > i {
+        padding: 1rem;
+        text-align: right;
+    }
+    
+    .group_button-title {
+        padding: 1rem;
+        margin: 0 65px;
+    }  
+    .group_quem {
+        width: 360px;
+    }
+    .group_duvidas {
+        width: 360px;
+    }
+    .group_carousel {
+        margin-bottom: 1rem;
+    }
+    .group_payment_mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        width: 360px;
+        height: 84px;
+        margin-bottom: 5rem;
+    }
+    .group_payment_mobile-value {
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    .group_payment_mobile-text {
+        font-size: 0.8rem;
+        color: #0CD4AD;
+        margin: 0.5rem 0;
+    }
+    .content {
+        padding: 0 1rem;
+    }
+    .group_payment_mobile-btn {
+        width: 127px;
+        height: 48px;
+        border-radius: 5px;
+        border: none;
+        background-color: #01B1EC;
+        color: white;
+        margin: 0 1rem;
+    }
 }
